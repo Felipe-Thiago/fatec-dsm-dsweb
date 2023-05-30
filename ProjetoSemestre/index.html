@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | RecycleHub</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer>
+        function senha(){
+            if (document.querySelector("#mostrar").getAttribute("src") == "img/Show.png"){
+                document.querySelector("#mostrar").setAttribute("src", "img/Hide.png")
+                document.querySelector("#loginsenha").setAttribute("type", "text")
+            } else{
+                document.querySelector("#mostrar").setAttribute('src', "img/Show.png")
+                document.querySelector("#loginsenha").setAttribute("type", "password")
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div id="quadradologin">
+        <div id="logo">
+            <img src="img/logo.png" alt="Logo">
+        </div>
+        <form>
+            <input type="text" id="loginusuario" name="Usuario" placeholder="Usuário"><img src="img/User.png" alt="Usuario">
+            
+            <input type="password" id="loginsenha" name="Senha" placeholder="Senha"><img src="img/Show.png" alt="Visualizar" id="mostrar" onclick="senha()">
+            <br>
+            <input type="button" value="ENTRAR" id="btnEntrar" onclick="location.href = 'index.html'">
+            <p><b>ou</b></p>
+            <ul id="logos">
+                <li><a href="#appleiosnsei"><img src="img/logoApple.png" alt="Mac"></a></li>
+                <li><a href="#google"><img src="img/logoGoogle.png" alt="Google"></a></li>
+                <li><a href="#facebook"><img src="img/logoFacebook.png" alt="Facebook"></a></li>
+            </ul>
+            
+            <a href="#registrar">
+                <b>Ainda não possui uma conta?
+                <br>
+                Registre-se aqui.</b>
+            </a>
+        </form>
+    </div>
+</body>
+</html>

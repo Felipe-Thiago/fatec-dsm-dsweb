@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto JS</title>
+</head>
+<body>
+    <h1>Verificando Saldo Devedor</h1>
+    <label for="vCont">Valor do Contrato:</label>
+    <input type="text" name="ValorContrato" id="vCont">
+    <br><br>
+    <label for="vPago">Valor Pago:</label>
+    <input type="text" name="ValorPago" id="vPago">
+    <br><br>
+    <button onclick="Calcular()">Verificar Dívida</button>
+    <br>
+    <p id="saldo">Saldo:</p>
+
+
+    <script>
+        function Calcular(){
+            vC = Number(document.getElementById('vCont').value)
+            vP = Number(document.getElementById("vPago").value)
+
+            S = vC - vP
+            
+            /* document.getElementById("saldo").innerHTML += S*/
+            document.getElementById("saldo").innerHTML = `O saldo é de R$${S}`
+            if(S < 0){
+                document.getElementById("saldo").style.color="red";
+            } else{
+                document.getElementById("saldo").style.color="blue";
+            }
+            
+        }
+        
+    </script>
+</body>
+</html>

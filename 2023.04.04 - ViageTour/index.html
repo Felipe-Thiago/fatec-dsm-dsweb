@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ViageTour Sonho</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="cont">
+        <h1>ViageTour Sonho</h1>
+        <p>Horário: <span id="hora">Hora</span></p>
+    </header>
+    
+    <form id="formulario">
+        <input type="text" name="nome" id="nome" placeholder="Informe seu nome">
+
+        <label for="destino">Destino: </label>
+        <select name="destino" id="destino">
+            <option value="1500">Curitiba</option>
+            <option value="1500">Rio de Janeiro</option>
+            <option value="2500">Maceió</option>
+            <option value="2000">Salvador</option>
+        </select>
+        <br>
+        <label>Adicionais: </label>
+        <input type="checkbox" name="adicionais" id="cPasseio" value="50">
+        <label for="cPasseio">Passeio</label>
+        <input type="checkbox" name="adicionais" id="cTrans" value="70">
+        <label for="cTrans">Translado</label>
+
+        <br>
+        <span>Quer guia?</span>
+        <input type="radio" name="guia" id="guiaSim" value="30">
+        <label for="guiaSim">Sim</label>
+        <input type="radio" name="guia" id="guiaNao" value="0">
+        <label for="guiaNao">Não</label>
+
+        <p id="total">(nome) irá pagar (x), pagando pelo adicional (y) e pelo guia (z), totalizando: (tot)</p>
+
+        <input type="button" value="Calcular" class="botn" onclick="calcular()">
+        <input type="button" value="Limpar" class="botn" onclick="limpar()">
+        <button class="botn" onclick="limpar()">Limpar</button>
+        <input type="button" value="Imprimir" class="botn" onclick="imprimir()">
+
+        <!--
+        <button name="calcular" id="btnOrcamento">Orçamento</button>
+        <button name="limpar" id="btnLimpar">Limpar</button>
+        <button name="imprimir" id="btnImprimir">Imprimir</button>-->
+    </form>
+    
+</body>
+</html>

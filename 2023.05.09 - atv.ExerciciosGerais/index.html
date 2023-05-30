@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios Gerais (JavaScript)</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <div id="exercicio_1">
+                <legend><b>Exercício 1</b> - Média de valores</legend>
+                <label for="inputx">Insira um valor para x: </label>
+                <input type="number" name="dadox" id="inputx">
+                <br>
+                <label for="inputy">Insira um valor para y: </label>
+                <input type="number" name="dadoy" id="inputy">
+                <br><br>
+                <input type="button" value="Média" id="exerc1" onclick="exer1()">
+                <br><br>
+                <label id="result_ex1"></label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <div id="exercicio_2">
+                <legend><b>Exercício 2</b> - Potência de valores</legend>
+                <input type="button" value="Enviar" id="exerc2" onclick="exer2()">
+                <br>
+                <p id="result_ex2">Resultado: </p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Exercício 3</b> - Menor valor</legend>
+            <div id="exercicio_3">
+                <label for="v1">Valor 1: </label>
+                <input type="number" name="valor1" id="v1">
+                <br>
+                <label for="v2">Valor 2:</label>
+                <input type="number" name="valor2" id="v2">
+                <br>
+                <label for="v3">Valor 3: </label>
+                <input type="number" name="valor3" id="v3">
+                <br><br>
+                <input type="button" value="Enviar" onclick="exer3()">
+                <br>
+                <p id="result_3">Menor valor: </p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Exercício 4</b> - Descontrução de objeto <i>(Dados no console)</i></legend>
+            <div id="exercicio_4">
+                <label for="exerc4"></label>
+                <input type="button" value="Enviar" id="exerc4" onclick="exer4()">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Exercício 5</b> - Dados do objeto e array</legend>
+            <div id="exercicio_5">
+                <p id="marca">Marca: </p>
+                <p id="processador">Processador: </p>
+                <p id="valor">Segundo valor: </p>
+                <input type="button" value="Enviar" id="exerc5" onclick="exer5()">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Exercício 6</b> - Função alert</legend>
+            <div id="exercicio_6">
+                <input type="button" value="Enviar" id="exerc6" onclick="exer6()">
+                
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Exercício 7</b> - Junção com novo objeto <i>(Dados no console)</i></legend>
+            <div id="exercicio_7">
+                <input type="button" value="Enviar" id="exerc7" onclick="exer7()">
+                <p id="result_7"></p>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend><b>Exercício 8</b> - Manipulação de Array</legend>
+            <div id="exercicio_8">
+                <input type="button" value="Enviar" id="exerc8" onclick="exer8()">
+                <br>
+                <p id="result_8a"></p>
+                <p id="result_8b"></p>
+                <p id="result_8c"></p>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

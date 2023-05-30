@@ -1,0 +1,38 @@
+body{
+    background-color: rgb(240, 240, 240);
+}
+
+fieldset{
+    background-color: rgba(113, 206, 237, 0.644);
+}
+
+input{
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid gainsboro;
+}
+
+label{
+    margin-left: 15px;
+}
+
+div{
+    margin-top: 1%;
+}
+
+fieldset{
+    margin-bottom: 1%;
+}
+legend{
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: beige;
+    padding: 5px;
+}
+
+input#botao{
+    background-color: blue;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid black;
+}

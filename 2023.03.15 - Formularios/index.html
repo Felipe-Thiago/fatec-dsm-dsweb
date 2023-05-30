@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados de Login</legend>
+            <div>
+                <label for="login">Login</label>
+                <input type="text" name="login" id="login" maxlength="30" size="35" placeholder="Digite o login...">
+        
+                <label for="passw">Senha</label>
+                <input type="password" name="senha" id="passw" size="35" placeholder="Digite sua senha...">
+            </div>
+
+        </fieldset>
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" name="nome" id="nome" maxlength="10" size="35" placeholder="Digite seu nome...">
+
+            
+                <label for="cidade">Cidade</label>
+                <input type="text" name="cid" id="cidade" value="Votorantim" autofocus disabled>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <legend>Dados de entrega</legend>
+            <div>
+                <label for="ender">Logradouro</label>
+                <input type="text" name="endereco" id="ender" size="70" placeholder="Nome da rua...">
+
+                <label for="num">Número</label>
+                <input type="number" name="numero" id="num" min="0" max="9999" size="6" step="10" style="text-align: center;">
+                
+                <div>
+
+                
+                    <input type="checkbox" name="entregaterceiro" id="ent-ter" checked>
+                    <label for="ent-ter">Permite a entrega para terceiros?</label>
+                </div>
+            </div>
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>

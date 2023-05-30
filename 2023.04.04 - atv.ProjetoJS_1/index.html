@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjetoJS_1</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <form>
+        <fieldset>
+            <legend><b>Exercício 1</b> - Cálculo de salário</legend>
+            <div id="exercicio_1">
+                <label for="salario">Informe o salário: </label>
+                <input type="number" name="salario" id="salario">
+                
+                <label for="aumento">Informe um percentual de aumento: </label>
+                <input type="number" name="aumento" id="aumento">%
+                
+                <input type="button" value="Enviar" id="botao1" onclick="exer1()">
+
+                <br>
+                <p id="result01">Novo salário: <span id="resultado01">0.00</span></p>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Exercício 2</b> - Cálculo da área de um triângulo</legend>
+            <div id="exercicio_2">
+                <label for="baseTri">Informe a base do triângulo: </label>
+                <input type="number" name="baseTri" id="baseTri">
+
+                <label for="altTri">Informe a altura do triângulo: </label>
+                <input type="number" name="altTri" id="altTri">
+
+                <input type="button" value="Enviar" id="botao2" onclick="exer2()">
+
+                <br><br>
+                <input type="text" name="result02" id="result02" value="Área: " disabled>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Exercício 3</b> - Cálculo de média aritmética ponderada</legend>
+            <div id="exercicio_3">
+                <label for="nota1">Informe a primeira nota: </label>
+                <input type="number" name="nota1" id="nota1">
+
+                <label for="nota2">Informe a segunda nota: </label>
+                <input type="number" name="nota2" id="nota2">
+
+                <input type="button" value="Enviar" id="botao3" onclick="exer3()">
+
+                <br><br>
+                <label id="result03">Média Aritmética Ponderada:</label>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Exercício 4</b> - Cálculo de idade</legend>
+            <div id="exercicio_4">
+                <p>Obs.: Os resultados estão no console</p>
+                <label for="dataNasc">Informe a data de nascimento:</label>
+                <input type="date" name="dataNasc" id="dataNasc" min="1900-01-01" max="2023-04-09">
+
+                <input type="button" value="Enviar" id="botao4" onclick="exer4()">
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Exercício 5</b> - Cálculo do consumo médio de combustível</legend>
+            <div id="exercicio_5">
+                <label for="dist">Informe uma distância (km) percorrida</label>
+                <input type="number" name="distancia" id="dist">
+                <br>
+                <label for="volGas">Informe o volume de combustível (litros) gasto nessa distância</label>
+                <input type="number" name="volume" id="volGas">
+                <br>
+                <input type="button" value="Enviar" id="botao5" onclick="exer5()">
+
+                <br>
+                <p id="result05">O consumo médio de combustível é de <span id="resultado05">0</span> Km/L</p>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Exercício 6</b> - Cálculo de salário (empresa RAB)</legend>
+            <div id="exercicio_6">
+                <p>Obs.: Cálculo baseado em um trabalho de 62 horas</p>
+                <label for="pagHora">Informe o valor do pagamento por hora: </label>
+                <input type="number" name="pagamentoHora" id="pagHora">
+                <br>
+                <label for="refeicoes">Informe a quantidade de refeições feitas: </label>
+                <input type="number" name="refeicoes" id="ref">
+                <br>
+                <input type="button" value="Enviar" id="botao6" onclick="exer6()">
+                <br>
+                <p>Salário Bruto: R$<span id="salarioBruto">0</span></p>
+                <p>Desconto da Refeição: R$<span id="descRefeicao">0</span></p>
+                <p>Salário Líquido: R$<span id="salarioLiquido">0</span></p>
+            </div>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><b>Exercício 7</b> - Número randômico</legend>
+            <div id="exercicio_7">
+                <label for="rMin">Informe um valor mínimo: </label>
+                <input type="number" name="randomMinimo" id="rMin">
+                <br>
+                <label for="rMax">Informe um valor máximo: </label>
+                <input type="number" name="randomMaximo" id="rMax">
+                <br>
+                <input type="button" value="Enviar" id="botao7" onclick="exer7()">
+                <br>
+                <p>Entre esses números, o número <span id="numRandom">x</span> é <span id="ImPar">impar/par</span></p>
+            </div>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

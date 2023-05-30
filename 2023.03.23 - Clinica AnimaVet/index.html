@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços | Clínica AnimaVet</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <a href="#servicos"><li>Serviços</li></a>
+             | 
+            <a href="#cadastro"><li>Cadastro</li></a>
+        </ul>
+    </nav>
+    <h1>Clínica AnimaVet</h1>
+    <img src="img/pexels-mareks-steins-1560666.jpg" alt="cachorro ao mar">
+    <br>
+    <hr>
+    
+    <section id="servicos">
+        <table border>   
+            <caption><h2>Serviços</h2></caption>
+            <thead style="background-color: #2A271E; color: #F2F1EC;">
+                <tr>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Banho e Tosa</td>
+                    <td>R$50,00</td>
+                </tr>
+                <tr>
+                    <td>Vacinação</td>
+                    <td>R$120,00</td>
+                </tr>
+                <tr>
+                    <td>Consulta</td>
+                    <td>R$80,00</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr style="background-color: #84f1fb;">
+                    <th colspan="2">Promoção de incentivo: Realize a vacinação de 2 pets ou mais e ganhe o banho e tosa</th>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+    <hr>
+    <section id="cadastro">
+        <form>
+            <h2>Cadastro</h2>
+            <fieldset>
+                <legend>Dados do Pet</legend>
+                <label for="nomePet">Nome</label><br>
+                <input type="text" name="nomePet" id="nomePet" placeholder="Nome do Pet" size="50" required>
+
+                <br>
+                <br>
+                <label for="tipoPet">Tipo do Pet</label><br>
+                <select name="tipoPet" id="tipoPet" required>
+                    <optgroup label="Mamífero">
+                        <option value="Cachorro">Cachorro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="PdaIndia">Porquinho-da-Índia</option>
+                        <option value="Hamster">Coelho</option>
+                    </optgroup>
+                    <optgroup label="Réptil">
+                        <option value="Tartaruga">Tartaruga</option>
+                        <option value="Lagarto">Lagarto</option>
+                        <option value="Lagartixa">Lagartixa (gecko)</option>
+                    </optgroup>
+                    <optgroup label="Ave">
+                        <option value="Periquito">Periquito</option>
+                        <option value="Papagaio">Papagaio</option>
+                        <option value="Calopsita">Calopsita</option>
+                    </optgroup>
+                </select>
+
+                <br>
+                <br>
+                <label for="dataNasc">Data de Nascimento</label><br>
+                <input type="date" name="dataNasc" id="dataNasc">
+
+                <br><br>
+                <input type="checkbox" name="Bravo" id="Bravo">
+                <label for="Bravo">O animal é bravo?</label> 
+            </fieldset>
+            <fieldset>
+                <legend>Dados do Dono</legend>
+                <label for="nomeDono">Nome</label><br>
+                <input type="text" name="nomeDono" id="nomeDono" placeholder="Nome do Dono" size="50" required>
+
+                <br><br>
+                <label for="telefone">Telefone para contato</label><br>
+                <input type="tel" name="telefone" id="telefone" placeholder="00 00000-0000" required>
+                <br>
+                <br>
+                <input type="submit" value="Cadastrar" id="botao">
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>

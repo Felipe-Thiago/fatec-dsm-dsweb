@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+body{
+    background-color: #F0F0F0;
+    font-family: 'Inter', sans-serif;
+}
+
+#quadradologin{
+    width: 972px;
+    height: 560px;
+    background-color: white;
+    box-shadow: 2px 2px 4px grey;
+    position: absolute;
+    margin-left: 196px;
+    margin-top: 32px;
+    margin-right: auto;
+}
+
+#logo{
+    margin: auto;
+    text-align: center;
+    margin-top: 52px;
+}
+
+form{
+    text-align: center;
+    margin-top: 54px;
+}
+
+#loginusuario, #loginsenha{
+    border-style: none;
+    border-bottom: solid 1px;
+    width: 67%;
+    font-size: 24px;
+    font-weight: 300;
+    padding-bottom: 12px;
+    margin-bottom: 45px;
+    outline: none;
+}
+
+form img{
+    margin-left: -25px;
+}
+
+#btnEntrar{
+    background-color: #0DCD00;
+    color: white;
+    padding: 15px 65px 15px 65px;
+    border: none;
+    border-radius: 37px;
+    font-style: normal;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#logos li{
+    list-style: none;
+    display: inline;
+    margin-inline: 45px;
+}
+
+a{
+    text-decoration: none;
+    color: #13E72C;
+}
+
+#mostrar{
+    cursor: pointer;
+}
