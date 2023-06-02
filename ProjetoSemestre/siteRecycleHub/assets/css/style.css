@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+:root {
+  --font-family: "Roboto", sans-serif;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --xsmall-font-size: 0.75rem;
+  --tiny-font-size: 0.625rem;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --gradient-color: linear-gradient(
+    150deg,
+    hsla(116, 100%, 42%, 1),
+    hsla(116, 100%, 32%, 1)
+  );
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--normal-font-size);
+  background-color: #fff;
+  color: #000;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding-inline: 1rem;
+}
+
+.section {
+  padding-block: 2.5rem;
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.main {
+  overflow: hidden;
+  margin-top: 5px;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  padding-block: 1rem;
+  z-index: 100;
+  background-color: #fff;
+}
+
+.header-container {
+  grid-auto-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 175px;
+}
+
+.header-navbar {
+  width: 100%;
+  height: calc(100vh - 78px);
+  background-color: #fff;
+  position: absolute;
+  top: 78px;
+  left: -100%;
+  align-items: start;
+  justify-content: center;
+  z-index: 100;
+  transition: all 200ms ease-out;
+}
+
+.header-navbar-show {
+  left: 0%;
+}
+
+.header-navbar-menu {
+  margin-block: 3rem;
+  text-align: center;
+  font-size: var(--h1-font-size);
+  font-weight: var(--font-semi-bold);
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-button {
+  font-size: 2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-menu-login {
+  background: var(--gradient-color);
+  padding-block: 1rem;
+  border-radius: 100px;
+  margin-top: 1rem;
+  width: 200px;
+}
+
+#button-login-menu {
+  color: #fff;
+}
+
+.slide-items img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider-top .swiper-button-prev::after,
+.slider-top .swiper-button-next::after {
+  color: hsla(116, 100%, 32%, 1);
+  padding-inline: 3rem;
+}
+
+.slider-top .swiper-button-prev {
+  left: 1rem;
+}
+
+.slider-top .swiper-button-next {
+  right: 1rem;
+}
+
+.subtitle {
+  color: hsla(116, 100%, 42%, 1);
+  font-size: var(--h3-font-size);
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.title {
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+}
+
+.objetivo {
+  justify-content: center;
+  align-items: center;
+}
+
+.objetivo-texto,
+.empresas-texto {
+  gap: 0;
+}
+
+.objetivo-imgs {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.button {
+  background: var(--gradient-color);
+  font-size: var(--h3-font-size);
+  font-weight: 700;
+  color: #fff;
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  margin-top: 20px;
+  width: fit-content;
+}
+
+.empresas {
+  background-image: url("../images/bg-empresas.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.empresas-count {
+  align-items: center;
+  justify-content: center;
+}
+
+.count-container {
+  gap: 0;
+  text-align: center;
+}
+
+.count {
+  color: hsla(116, 100%, 42%, 1);
+  font-size: 2.5rem;
+}
+
+.count-text {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: #454545;
+}
+
+.container-footer p {
+  color: #fff;
+  margin-top: 2rem;
+}
+
+.social-area {
+  grid-auto-flow: column;
+  justify-content: space-around;
+  width: 220px;
+  margin-inline: auto;
+  margin-top: 2rem;
+}
+
+.copy-area {
+  background-color: #303030;
+  text-align: center;
+  color: #fff;
+  padding-block: 2rem;
+}
+
+@media screen and (max-width: 480px) {
+  .slide-items img {
+    height: 300px;
+  }
+
+  .slider-top .swiper-button-prev::after,
+  .slider-top .swiper-button-next::after {
+    content: "";
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .objetivo {
+    grid-auto-flow: column;
+    justify-content: space-between;
+  }
+
+  .empresas-count {
+    grid-auto-flow: column;
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (min-width: 920px) {
+  .header-navbar {
+    height: fit-content;
+    background: none;
+    position: initial;
+  }
+  .header-navbar-menu {
+    grid-auto-flow: column;
+    text-align: center;
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-semi-bold);
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+  }
+
+  .header-menu-login {
+    width: 120px;
+    margin-top: 0;
+  }
+
+  #menu-button {
+    display: none;
+  }
+}

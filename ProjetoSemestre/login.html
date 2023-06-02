@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | RecycleHub</title>
+    <title>Recycle Hub - Login</title>
     <link rel="stylesheet" href="style.css">
     <script defer>
         function senha(){
-            if (document.querySelector("#mostrar").getAttribute("src") == "img/Show.png"){
-                document.querySelector("#mostrar").setAttribute("src", "img/Hide.png")
+            if (document.querySelector("#imgMostrar").getAttribute("src") == "img/Show.png"){
+                document.querySelector("#imgMostrar").setAttribute("src", "img/Hide.png")
                 document.querySelector("#loginsenha").setAttribute("type", "text")
             } else{
-                document.querySelector("#mostrar").setAttribute('src', "img/Show.png")
+                document.querySelector("#imgMostrar").setAttribute('src', "img/Show.png")
                 document.querySelector("#loginsenha").setAttribute("type", "password")
             }
             
@@ -25,12 +25,14 @@
             <img src="img/logo.png" alt="Logo">
         </div>
         <form>
-            <input type="text" id="loginusuario" name="Usuario" placeholder="Usuário"><img src="img/User.png" alt="Usuario">
+            <input type="text" id="loginusuario" name="Usuario" placeholder="Usuário">
+            <img src="img/User.png" alt="Usuario" id="imgUser">
             
-            <input type="password" id="loginsenha" name="Senha" placeholder="Senha"><img src="img/Show.png" alt="Visualizar" id="mostrar" onclick="senha()">
+            <input type="password" id="loginsenha" name="Senha" placeholder="Senha">
+            <img src="img/Show.png" alt="Visualizar" id="imgMostrar" onclick="senha()">
             <br>
-            <input type="button" value="ENTRAR" id="btnEntrar" onclick="location.href = 'index.html'">
-            <p><b>ou</b></p>
+            <a href="#" class="button" id="btnEntrar">ENTRAR</a>
+            <p><a href="">Esqueceu sua senha?</a></p>
             <ul id="logos">
                 <li><a href=""><img src="img/logoApple.png" alt="Mac"></a></li>
                 <li><a href=""><img src="img/logoGoogle.png" alt="Google"></a></li>
